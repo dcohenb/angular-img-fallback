@@ -6,7 +6,7 @@ Utility to work with loading images, has `fallback-src` to handle erros in image
 
 ## Installation
 1. Download and import the plugin script.<br />
-`<script type="text/javascript" src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>`
+`<script src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>`
 2. Add `dcbImgFallback` to your angular app module dependencies list.<br />
 `angular.module('myAngularApp', ['dcbImgFallback']);`
 3. Add the `fallback-src` attribute to yout img<br />
