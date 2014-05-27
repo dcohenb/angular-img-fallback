@@ -3,7 +3,9 @@ Angular Image Fallback
 
 Utility to work with loading images, has `fallback-src` to handle erros in image loading and `loading-src` for images loading placeholders.
 
-
+## Bower Download
+`bower install angular-img-fallback`
+  
 ## Installation
 1. Download and import the plugin script.<br />
 `<script src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>`
