@@ -29,7 +29,7 @@ Make sure you use `ng-src` as your image src attribute.
 `<img ng-src="{{'path/to/img.jpg'}}" fallback-src="{{'path/to/fallback.jpg'}}" />`
 
 - Loading placeholder, show a loading placeholder until image loads<br />
-`<img ng-src="{{'path/to/img.jpg'}}" loading-src="{{'path/to/fallback.jpg'}}" />`
+`<img ng-src="{{'path/to/img.jpg'}}" />`
 
 - Custom Loading placeholder, show a custom image loading placeholder until image loads<br />
 `<img ng-src="{{'path/to/img.jpg'}}" loading-src="{{'path/to/loading.jpg'}}" />`

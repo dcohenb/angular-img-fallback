@@ -13,7 +13,10 @@ angular.module('dcbImgFallback', [])
                 // Listen for errors on the element and if there are any replace the source with the fallback source
                 var errorHanlder = function () {
                     element.off('error', errorHanlder);
-                    element[0].src = attr.fallbackSrc || missingDefault;
+                    var newSrc = attr.fallbackSrc || missingDefault;
+                    if (element[0].src !== newSrc) {
+                        element[0].src = newSrc;
+                    }
                 };
                 element.on('error', errorHanlder);
             }
@@ -29,7 +32,9 @@ angular.module('dcbImgFallback', [])
             img.src = scope.imgSrc;
             img.onload = function () {
                 img.onload = null;
-                element[0].src = img.src;
+                if (element[0].src !== img.src) {
+                    element[0].src = img.src;
+                }
             };
         };
 
