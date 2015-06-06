@@ -12,7 +12,7 @@
     "Daniel Cohen <dcohenb@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/dcohenb",
+  "homepage": "https://github.com/dcohenb/angular-img-fallback",
   "ignore": [
     "angular.dcb-img-fallback.js",
     "example.html",
