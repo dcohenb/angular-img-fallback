@@ -34,8 +34,8 @@ Make sure you use `ng-src` as your image src attribute.
 - Custom Loading placeholder, show a custom image loading placeholder until image loads<br />
 `<img ng-src="{{'path/to/img.jpg'}}" loading-src="{{'path/to/loading.jpg'}}" />`
 
-- Or both! image with invalid source, loading placeholder and a fallback source<br />
-`<img ng-src="{{'path/to/img.jpg'}}" loading-src="{{'path/to/loading.jpg'}}" fallback-src="{{'path/to/fallback.jpg'}}" />`
+- Or both! loading placeholder and a fallback source can work together<br />
+`<img ng-src="{{'path/to/img.jpg'}}" loading-src fallback-src />`
 
 
 ## Icons license
