@@ -29,7 +29,7 @@ angular.module('dcbImgFallback', [])
         var linkFunction = function (scope, element, attr) {
             element[0].src = attr.loadingSrc || loadingDefault;
             var img = new Image();
-            img.src = scope.imgSrc;
+            img.src = attr.imgSrc;
             img.onload = function () {
                 img.onload = null;
                 if (element[0].src !== img.src) {
