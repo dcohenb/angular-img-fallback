@@ -1,7 +1,7 @@
 Angular Image Fallback
 ======================
 
-Angular directives that handles image loading, it has `fallback-src` to handle errors in image loading and `loading-src` for placeholder while the image is being loaded.
+Angular directives that handles image loading, it has `image-holder` to handle errors in image loading and `image-loading` for placeholder while the image is being loaded.
   
 ## Installation
 1. Download and import the plugin script.<br />
@@ -21,16 +21,16 @@ Make sure you use `ng-src` as your image src attribute.
 ## Advanced options
 
 
- - default:
+ - default:<br />
 `<img image="{{image.url}}" />`
 
- - with custom loading placeholder
+ - with custom loading placeholder:<br />
 `<img image="{{image.url}}" image-loading="/image/loading.gif" />`
 
- - with custom fallback placeholder
+ - with custom fallback placeholder:<br />
 `<img image="{{image.url}}" image-holder="/image/error.png" />`
 
- - with custom fallback and loading placeholder
+ - with custom fallback and loading placeholders:<br />
 `<img image="{{image.url}}" image-loading="/image/loading.gif" image-holder="/image/error.png" />`
 
 
