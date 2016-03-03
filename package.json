@@ -1,6 +1,6 @@
 {
   "name": "angular-img-fallback",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Utility to work with loading images, has fallback-src to handle errors in image loading and loading-src for images loading placeholders.",
   "main": "angular.dcb-img-fallback.js",
   "scripts": {
