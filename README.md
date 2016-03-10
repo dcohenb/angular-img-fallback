@@ -41,3 +41,7 @@ Make sure you use `ng-src` as your image src attribute.
 ## Icons license
 Icons are provided from http://icomoon.io/ under the GNU General Public License v3.0<br />
 http://www.gnu.org/licenses/gpl.html
+
+## Contributing
+
+To produce a distributable build, install Uglify JS by running `npm install uglify-js -g` and `uglifyjs angular.dcb-img-fallback.js -c -m -o angular.dcb-img-fallback.min.js`
