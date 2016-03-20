@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/dcohenb/angular-img-fallback/issues"
   },
-  "homepage": "https://github.com/dcohenb/angular-img-fallback#readme"
+  "homepage": "https://github.com/dcohenb/angular-img-fallback#readme",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
 }
