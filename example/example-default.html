@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular image fallback example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="../angular.dcb-img-fallback.js"></script>
+</head>
+<body>
+
+<div>
+    <h3>Default fallback image</h3>
+    <img ng-src="invalid-image.jpg" fallback-src height="300"/>
+</div>
+
+<div>
+    <h3>Default loading image</h3>
+    <img ng-src="{{'https://dcb.co.il/angular-image-fallback/high-res.jpg'}}" loading-src height="300"/>
+</div>
+
+<script>
+    angular.module('app', ['dcbImgFallback']);
+</script>
+</body>
+</html>

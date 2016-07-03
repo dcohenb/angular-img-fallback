@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular image fallback example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="../angular.dcb-img-fallback.js"></script>
+</head>
+<body>
+
+<h1>Note!</h1>
+<p>Once you set a custom fallback or loading source all other images using the directive will be effected.</p>
+
+<div>
+    <h3>Custom fallback image</h3>
+    <img ng-src="invalid-image.jpg" fallback-src="{{'https://dcb.co.il/angular-image-fallback/fallback.png'}}" height="300"/>
+
+    <p>Default fallback image is now set to the custom url provided before</p>
+    <img ng-src="invalid-image.jpg" fallback-src height="300"/>
+</div>
+
+<div>
+    <h3>Custom loading image</h3>
+    <img ng-src="{{'https://dcb.co.il/angular-image-fallback/high-res.jpg'}}" loading-src="{{'https://dcb.co.il/angular-image-fallback/loading.jpg'}}" height="300"/>
+
+    <p>Default loading image is now set to the custom url provided before</p>
+    <img ng-src="{{'https://dcb.co.il/angular-image-fallback/high-res.jpg'}}" loading-src height="300"/>
+</div>
+
+
+<script>
+    angular.module('app', ['dcbImgFallback']);
+</script>
+</body>
+</html>

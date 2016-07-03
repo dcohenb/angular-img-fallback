@@ -5,7 +5,8 @@ Angular directives that handles image loading, it has `fallback-src` to handle e
 
 ## Bower Download
 `bower install angular-img-fallback`
-  
+
+
 ## Installation
 1. Download and import the plugin script.<br />
 `<script src="lib/angular-img-fallback/angular.dcb-img-fallback.min.js"></script>`
@@ -42,6 +43,8 @@ Make sure you use `ng-src` as your image src attribute.
 Icons are provided from http://icomoon.io/ under the GNU General Public License v3.0<br />
 http://www.gnu.org/licenses/gpl.html
 
+
 ## Contributing
 
-To produce a distributable build, install Uglify JS by running `npm install uglify-js -g` and `uglifyjs angular.dcb-img-fallback.js -c -m -o angular.dcb-img-fallback.min.js`
+We use Babel to compile the es6 code to es5 and uglify-js to minify the code even more.
+it's already setup, all you need to do is install dependencies using `$ npm install` and run `$ npm run build`.

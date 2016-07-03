@@ -1,10 +1,10 @@
 {
   "name": "angular-img-fallback",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Utility to work with loading images, has fallback-src to handle errors in image loading and loading-src for images loading placeholders.",
   "main": "angular.dcb-img-fallback.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel angular.dcb-img-fallback.js -o angular.dcb-img-fallback.min.js -s --no-comments && uglifyjs angular.dcb-img-fallback.min.js -c -m -o angular.dcb-img-fallback.min.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/dcohenb/angular-img-fallback#readme",
   "devDependencies": {
-    "uglify-js": "^2.6.2"
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "uglify-js": "^2.6.4"
   }
 }
