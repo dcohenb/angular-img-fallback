@@ -17,6 +17,10 @@ angular.module('dcbImgFallback', [])
 
         // Listen for errors on the element and if there are any replace the source with the fallback source
         var errorHanlder = function () {
+
+          //fallbackSrc may have changed since the link function ran, so try to grab it again.
+          var newSrc = attr.fallbackSrc ? imageService.setMissing(attr.fallbackSrc) : imageService.getMissing();
+
           if (element[0].src !== newSrc) {
             element[0].src = newSrc;
           }
