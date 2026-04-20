@@ -13,7 +13,7 @@
   "keywords": [
     "angularjs"
   ],
-  "author": "Daniel Cohen <dcohenb@gmail.com>",
+  "author": "dcohenb",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dcohenb/angular-img-fallback/issues"
